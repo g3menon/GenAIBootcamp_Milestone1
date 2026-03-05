@@ -1,0 +1,118 @@
+{
+  "fund_id": "hdfc_banking_financial_services",
+  "fund_name": "HDFC Banking & Financial Services Fund",
+  "source_url": "https://www.indmoney.com/mutual-funds/hdfc-banking-financial-services-fund-direct-growth-1006661",
+  "plan_type": "Direct Plan - Growth",
+  "category": "Equity - Sectoral",
+  "overview": {
+    "nav": "₹18.82",
+    "nav_date": "04 Mar 2026",
+    "benchmark": "Nifty Financial Services TR INR"
+  },
+  "returns": {
+    "1M": "3.31%",
+    "3M": "1.45%",
+    "6M": "8.07%",
+    "1Y": "23.66%",
+    "3Y": "17.87%",
+    "5Y": "--",
+    "since_inception": null,
+    "benchmark_returns": {
+      "1M": "1.56%",
+      "3M": "2.42%",
+      "6M": "1.52%",
+      "1Y": "16.31%",
+      "3Y": "16.18%",
+      "5Y": "12.79%"
+    }
+  },
+  "costs": {
+    "expense_ratio": "0.8%",
+    "exit_load": "1% if redeemed in 0-30 Days",
+    "stamp_duty": null,
+    "transaction_charges": null
+  },
+  "risk": {
+    "riskometer": "Very High",
+    "risk_category": null,
+    "lock_in_period": "None",
+    "suitable_for": null
+  },
+  "investment": {
+    "minimum_sip": "₹100",
+    "minimum_lumpsum": "₹100",
+    "sip_frequency": null,
+    "additional_purchase_min": null
+  },
+  "portfolio": {
+    "top_holdings": [
+      {
+        "name": "HDFC Bank Ltd",
+        "pct": "18.85%"
+      },
+      {
+        "name": "ICICI Bank Ltd",
+        "pct": "15.1%"
+      },
+      {
+        "name": "Axis Bank Ltd",
+        "pct": "8.67%"
+      }
+    ],
+    "sector_allocation": null,
+    "total_holdings": null,
+    "portfolio_turnover": null
+  },
+  "aum": {
+    "value": "₹4486 Cr",
+    "date": null,
+    "trend": null
+  },
+  "manager": {
+    "name": "Anand Laddha",
+    "experience": null,
+    "qualification": null,
+    "other_funds_managed": null
+  },
+  "inception_date": "N/A",
+  "faqs": [
+    {
+      "question": "How do I invest in HDFC Banking & Financial Services Fund?",
+      "answer": "INDmoney makes it simple to invest in the HDFC Banking & Financial Services Fund. To do so, follow the steps below:Download the INDmoney app.Search for ‘HDFC Banking & Financial Services Fund’.Select whether you want to invest in SIP or lump sum.Enter the amount you wish to invest.Set up payments via bank mandate or UPI."
+    },
+    {
+      "question": "What is the current NAV of HDFC Banking & Financial Services Fund?",
+      "answer": "The NAV of the fund today is ₹18.82. NAV or Net Asset Value is the per unit price of a mutual fund. For example, if the NAV of a fund is ₹10, it means you can get 1000 units of that mutual fund at ₹10,000."
+    },
+    {
+      "question": "What is the return on the fund?",
+      "answer": "HDFC Banking & Financial Services Fund fund has generated a return of 23.66% in 1 year, 17.87% in 3 years"
+    },
+    {
+      "question": "Who is the fund manager of HDFC Banking & Financial Services Fund?",
+      "answer": "The fund managers are Anand Laddha, Dhruv Muchhal."
+    },
+    {
+      "question": "What is the exit load of the fund?",
+      "answer": "The exit load is 1% if redeemed in 0-30 Days. Exit load is a fee levied for ‘exiting’ the fund earlier than a stipulated period, usually 1 year."
+    },
+    {
+      "question": "What is the expense ratio of the fund?",
+      "answer": "The expense ratio is 0.80%. The Expense Ratio is a fee charged for managing the fund. This includes commissions, administrative costs etc."
+    },
+    {
+      "question": "What is the AUM of the fund?",
+      "answer": "The AUM of the fund is ₹4486 Cr. AUM stands for Assets Under Management. It refers to the total assets managed by the fund."
+    },
+    {
+      "question": "What are the top holdings of HDFC Banking & Financial Services Fund?",
+      "answer": "The top 3 holdings of the fund are HDFC Bank Ltd(18.85%), ICICI Bank Ltd(15.1%), Axis Bank Ltd(8.67%)"
+    }
+  ],
+  "documents": {
+    "sid_link": null,
+    "kim_link": null,
+    "factsheet_link": null
+  },
+  "scraped_at": "2026-03-05T05:41:32.015230+00:00"
+}

@@ -1,0 +1,14 @@
+{
+  "processed_at": "2026-03-05T06:14:59.965627",
+  "funds_processed": 5,
+  "total_chunks": 96,
+  "chunks_per_fund": {
+    "hdfc_banking_financial_services": 18,
+    "hdfc_pharma_healthcare": 18,
+    "hdfc_housing_opportunities": 18,
+    "hdfc_manufacturing": 18,
+    "hdfc_transportation_logistics": 18
+  },
+  "static_faq_chunks": 6,
+  "warnings": []
+}

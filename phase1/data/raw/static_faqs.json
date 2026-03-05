@@ -1,0 +1,50 @@
+[
+  {
+    "faq_id": "faq_capital_gains_statement",
+    "question": "How to download capital-gains statement?",
+    "answer": "To download your capital gains statement from INDmoney:\n1. Log in to the INDmoney app or website.\n2. Tap on your Profile Picture or navigate to the Profile section.\n3. Scroll to find 'Tax Report' or 'Reports'.\n4. Select the 'Mutual Funds' section.\n5. Choose 'Capital Gains Statement'.\n6. Select the desired Financial Year and download the report in PDF or Excel format.\n\nFor statements directly from HDFC AMC:\n1. Visit https://www.hdfcfund.com\n2. Navigate to 'Investor Services' → 'Account Statement'\n3. Follow the on-screen instructions to verify your identity\n4. Select the date range and download.",
+    "source": "manually_curated",
+    "applicable_funds": "all",
+    "category": "procedural"
+  },
+  {
+    "faq_id": "faq_elss_lockin",
+    "question": "What is the ELSS lock-in period for HDFC Mutual Funds?",
+    "answer": "ELSS (Equity Linked Savings Scheme) funds have a mandatory lock-in period of 3 years from the date of investment. However, none of the 5 target HDFC funds in this chatbot are ELSS funds. The following funds have NO lock-in period:\n- HDFC Banking & Financial Services Fund\n- HDFC Pharma and Healthcare Fund\n- HDFC Housing Opportunities Fund\n- HDFC Manufacturing Fund\n- HDFC Transportation and Logistics Fund\n\nAll of these are sectoral/thematic equity funds with no lock-in requirement.",
+    "source": "manually_curated",
+    "applicable_funds": "all",
+    "category": "factual"
+  },
+  {
+    "faq_id": "faq_sip_registration",
+    "question": "How to start a SIP in HDFC Mutual Fund?",
+    "answer": "To start a SIP (Systematic Investment Plan) in an HDFC Mutual Fund:\n\nVia INDmoney:\n1. Open the INDmoney app or website.\n2. Search for the desired HDFC fund (e.g., HDFC Banking & Financial Services Fund).\n3. Click 'Invest' or 'Start SIP'.\n4. Enter the SIP amount (minimum ₹100 for most HDFC Direct Plan funds).\n5. Choose the SIP frequency (Monthly / Quarterly).\n6. Select the SIP date.\n7. Complete KYC if not already done.\n8. Set up auto-debit from your bank account.\n\nVia HDFC AMC directly:\n1. Visit https://www.hdfcfund.com\n2. Register or log in to your account.\n3. Navigate to 'Transact' → 'New SIP'.\n4. Select the fund, plan (Direct/Regular), and option (Growth/IDCW).\n5. Enter the SIP amount and frequency.\n6. Complete the e-mandate for auto-debit.",
+    "source": "manually_curated",
+    "applicable_funds": "all",
+    "category": "procedural"
+  },
+  {
+    "faq_id": "faq_direct_vs_regular",
+    "question": "What is the difference between Direct and Regular plan?",
+    "answer": "Direct Plan: You invest directly with the AMC (HDFC Mutual Fund) without any intermediary. The expense ratio is lower because no distributor commission is paid. This results in higher returns over time.\n\nRegular Plan: You invest through a distributor (broker, bank, financial advisor). The expense ratio is higher due to the distributor commission. Returns are slightly lower compared to the Direct plan.\n\nAll 5 HDFC funds covered by this chatbot are available in the Direct Plan - Growth option. The expense ratios shown are for the Direct Plan.",
+    "source": "manually_curated",
+    "applicable_funds": "all",
+    "category": "factual"
+  },
+  {
+    "faq_id": "faq_exit_load_general",
+    "question": "What is exit load and when does it apply?",
+    "answer": "Exit load is a fee charged by the mutual fund when you redeem (sell) your units before a specified period. It is deducted from the redemption amount.\n\nFor example, if a fund has an exit load of '1% for redemption within 15 days', it means:\n- If you redeem within 15 days of purchase: 1% of the redemption value is deducted as exit load.\n- If you redeem after 15 days: No exit load is charged.\n\nThe exit load varies by fund. Please check the specific fund's exit load details for accurate information.",
+    "source": "manually_curated",
+    "applicable_funds": "all",
+    "category": "factual"
+  },
+  {
+    "faq_id": "faq_nav_meaning",
+    "question": "What is NAV and how is it calculated?",
+    "answer": "NAV (Net Asset Value) is the per-unit market value of a mutual fund scheme. It represents the price at which you buy or sell units of the fund.\n\nNAV = (Total Market Value of Assets - Total Liabilities) / Total Number of Outstanding Units\n\nNAV is calculated at the end of each business day after market close. When you invest ₹1,000 in a fund with NAV of ₹50, you get 20 units (1000/50).\n\nThe NAV values shown in this chatbot are the latest available as of the last data refresh.",
+    "source": "manually_curated",
+    "applicable_funds": "all",
+    "category": "factual"
+  }
+]

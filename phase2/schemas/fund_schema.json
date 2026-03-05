@@ -1,0 +1,517 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "HDFC Mutual Fund Scraped Data",
+    "description": "JSON Schema for validating raw scraped data from IndMoney fund pages. Each fund's JSON file must conform to this schema.",
+    "type": "object",
+    "required": [
+        "fund_id",
+        "fund_name",
+        "source_url",
+        "plan_type",
+        "category",
+        "overview",
+        "returns",
+        "costs",
+        "risk",
+        "investment",
+        "portfolio",
+        "aum",
+        "manager",
+        "inception_date",
+        "scraped_at"
+    ],
+    "properties": {
+        "fund_id": {
+            "type": "string",
+            "description": "Unique identifier for the fund (e.g., hdfc_banking_financial_services)",
+            "pattern": "^hdfc_[a-z_]+$"
+        },
+        "fund_name": {
+            "type": "string",
+            "description": "Full fund name as displayed on the page",
+            "minLength": 10
+        },
+        "source_url": {
+            "type": "string",
+            "description": "The IndMoney URL from which this fund's data was scraped. This URL is included in every chunk for citation.",
+            "format": "uri"
+        },
+        "plan_type": {
+            "type": "string",
+            "description": "Plan type (Direct/Regular) and option (Growth/IDCW)",
+            "enum": [
+                "Direct Plan - Growth",
+                "Direct Plan - IDCW",
+                "Regular Plan - Growth",
+                "Regular Plan - IDCW"
+            ]
+        },
+        "category": {
+            "type": "string",
+            "description": "Fund category (e.g., Equity - Sectoral)",
+            "minLength": 3
+        },
+        "overview": {
+            "type": "object",
+            "description": "Fund overview data — NAV, benchmark",
+            "required": [
+                "nav",
+                "benchmark"
+            ],
+            "properties": {
+                "nav": {
+                    "type": [
+                        "string",
+                        "number"
+                    ],
+                    "description": "Current NAV value (e.g., '₹52.34' or 52.34)"
+                },
+                "nav_date": {
+                    "type": [
+                        "string",
+                        "null"
+                    ],
+                    "description": "Date of the NAV in ISO format or display format"
+                },
+                "benchmark": {
+                    "type": "string",
+                    "description": "Benchmark index name (e.g., Nifty Financial Services TRI)",
+                    "minLength": 3
+                }
+            }
+        },
+        "returns": {
+            "type": "object",
+            "description": "Fund returns across multiple time periods",
+            "properties": {
+                "1M": {
+                    "type": [
+                        "string",
+                        "number",
+                        "null"
+                    ],
+                    "description": "1-month return"
+                },
+                "3M": {
+                    "type": [
+                        "string",
+                        "number",
+                        "null"
+                    ],
+                    "description": "3-month return"
+                },
+                "6M": {
+                    "type": [
+                        "string",
+                        "number",
+                        "null"
+                    ],
+                    "description": "6-month return"
+                },
+                "1Y": {
+                    "type": [
+                        "string",
+                        "number",
+                        "null"
+                    ],
+                    "description": "1-year return"
+                },
+                "3Y": {
+                    "type": [
+                        "string",
+                        "number",
+                        "null"
+                    ],
+                    "description": "3-year return"
+                },
+                "5Y": {
+                    "type": [
+                        "string",
+                        "number",
+                        "null"
+                    ],
+                    "description": "5-year return"
+                },
+                "since_inception": {
+                    "type": [
+                        "string",
+                        "number",
+                        "null"
+                    ],
+                    "description": "Return since inception"
+                },
+                "benchmark_returns": {
+                    "type": [
+                        "object",
+                        "null"
+                    ],
+                    "description": "Matching benchmark returns for each period",
+                    "properties": {
+                        "1M": {
+                            "type": [
+                                "string",
+                                "number",
+                                "null"
+                            ]
+                        },
+                        "3M": {
+                            "type": [
+                                "string",
+                                "number",
+                                "null"
+                            ]
+                        },
+                        "6M": {
+                            "type": [
+                                "string",
+                                "number",
+                                "null"
+                            ]
+                        },
+                        "1Y": {
+                            "type": [
+                                "string",
+                                "number",
+                                "null"
+                            ]
+                        },
+                        "3Y": {
+                            "type": [
+                                "string",
+                                "number",
+                                "null"
+                            ]
+                        },
+                        "5Y": {
+                            "type": [
+                                "string",
+                                "number",
+                                "null"
+                            ]
+                        }
+                    }
+                }
+            }
+        },
+        "costs": {
+            "type": "object",
+            "description": "Fund cost structure — expense ratio, exit load, etc.",
+            "required": [
+                "expense_ratio",
+                "exit_load"
+            ],
+            "properties": {
+                "expense_ratio": {
+                    "type": "string",
+                    "description": "Expense ratio as percentage string (e.g., '0.8%')"
+                },
+                "exit_load": {
+                    "type": "string",
+                    "description": "Exit load description (e.g., '1.0% for redemption within 15 days')"
+                },
+                "stamp_duty": {
+                    "type": [
+                        "string",
+                        "null"
+                    ],
+                    "description": "Stamp duty percentage if listed"
+                },
+                "transaction_charges": {
+                    "type": [
+                        "string",
+                        "null"
+                    ],
+                    "description": "Transaction charges if listed"
+                }
+            }
+        },
+        "risk": {
+            "type": "object",
+            "description": "Risk assessment data",
+            "required": [
+                "riskometer"
+            ],
+            "properties": {
+                "riskometer": {
+                    "type": "string",
+                    "description": "Riskometer level",
+                    "enum": [
+                        "Low",
+                        "Low to Moderate",
+                        "Moderate",
+                        "Moderately High",
+                        "High",
+                        "Very High"
+                    ]
+                },
+                "risk_category": {
+                    "type": [
+                        "string",
+                        "null"
+                    ],
+                    "description": "Risk category label if different from riskometer"
+                },
+                "lock_in_period": {
+                    "type": [
+                        "string",
+                        "null"
+                    ],
+                    "description": "Lock-in period (e.g., 'None', '3 Years' for ELSS). Null if not found."
+                },
+                "suitable_for": {
+                    "type": [
+                        "string",
+                        "null"
+                    ],
+                    "description": "Investor suitability description if listed"
+                }
+            }
+        },
+        "investment": {
+            "type": "object",
+            "description": "Investment minimums and options",
+            "required": [
+                "minimum_sip",
+                "minimum_lumpsum"
+            ],
+            "properties": {
+                "minimum_sip": {
+                    "type": [
+                        "string",
+                        "number"
+                    ],
+                    "description": "Minimum SIP amount (e.g., '₹100' or 100)"
+                },
+                "minimum_lumpsum": {
+                    "type": [
+                        "string",
+                        "number"
+                    ],
+                    "description": "Minimum lumpsum amount (e.g., '₹100' or 100)"
+                },
+                "sip_frequency": {
+                    "type": [
+                        "array",
+                        "null"
+                    ],
+                    "description": "Available SIP frequencies",
+                    "items": {
+                        "type": "string"
+                    }
+                },
+                "additional_purchase_min": {
+                    "type": [
+                        "string",
+                        "number",
+                        "null"
+                    ],
+                    "description": "Minimum additional purchase amount"
+                }
+            }
+        },
+        "portfolio": {
+            "type": "object",
+            "description": "Fund portfolio — holdings and sector allocation",
+            "properties": {
+                "top_holdings": {
+                    "type": "array",
+                    "description": "Top stock holdings with allocation percentage",
+                    "items": {
+                        "type": "object",
+                        "required": [
+                            "name",
+                            "pct"
+                        ],
+                        "properties": {
+                            "name": {
+                                "type": "string",
+                                "description": "Stock/holding name"
+                            },
+                            "pct": {
+                                "type": [
+                                    "string",
+                                    "number"
+                                ],
+                                "description": "Allocation percentage"
+                            }
+                        }
+                    }
+                },
+                "sector_allocation": {
+                    "type": [
+                        "object",
+                        "null"
+                    ],
+                    "description": "Sector-wise allocation as key-value pairs (sector: percentage)",
+                    "additionalProperties": {
+                        "type": [
+                            "string",
+                            "number"
+                        ]
+                    }
+                },
+                "total_holdings": {
+                    "type": [
+                        "integer",
+                        "null"
+                    ],
+                    "description": "Total number of holdings in the portfolio"
+                },
+                "portfolio_turnover": {
+                    "type": [
+                        "string",
+                        "number",
+                        "null"
+                    ],
+                    "description": "Portfolio turnover ratio"
+                }
+            }
+        },
+        "aum": {
+            "type": "object",
+            "description": "Assets Under Management data",
+            "required": [
+                "value"
+            ],
+            "properties": {
+                "value": {
+                    "type": [
+                        "string",
+                        "number"
+                    ],
+                    "description": "Current AUM (e.g., '₹1,234 Cr' or 1234)"
+                },
+                "date": {
+                    "type": [
+                        "string",
+                        "null"
+                    ],
+                    "description": "AUM as-of date"
+                },
+                "trend": {
+                    "type": [
+                        "array",
+                        "null"
+                    ],
+                    "description": "Historical AUM data points if available",
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "date": {
+                                "type": "string"
+                            },
+                            "value": {
+                                "type": [
+                                    "string",
+                                    "number"
+                                ]
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "manager": {
+            "type": "object",
+            "description": "Fund manager details",
+            "required": [
+                "name"
+            ],
+            "properties": {
+                "name": {
+                    "type": "string",
+                    "description": "Fund manager's full name",
+                    "minLength": 2
+                },
+                "experience": {
+                    "type": [
+                        "string",
+                        "null"
+                    ],
+                    "description": "Years of experience (e.g., '15 years')"
+                },
+                "qualification": {
+                    "type": [
+                        "string",
+                        "null"
+                    ],
+                    "description": "Professional qualifications (e.g., 'MBA, CFA')"
+                },
+                "other_funds_managed": {
+                    "type": [
+                        "array",
+                        "null"
+                    ],
+                    "description": "List of other funds managed by this manager",
+                    "items": {
+                        "type": "string"
+                    }
+                }
+            }
+        },
+        "inception_date": {
+            "type": "string",
+            "description": "Fund inception date (e.g., '01-Jan-2013')"
+        },
+        "faqs": {
+            "type": [
+                "array",
+                "null"
+            ],
+            "description": "FAQ Q&A pairs scraped from the fund page",
+            "items": {
+                "type": "object",
+                "required": [
+                    "question",
+                    "answer"
+                ],
+                "properties": {
+                    "question": {
+                        "type": "string",
+                        "minLength": 5
+                    },
+                    "answer": {
+                        "type": "string",
+                        "minLength": 5
+                    }
+                }
+            }
+        },
+        "documents": {
+            "type": [
+                "object",
+                "null"
+            ],
+            "description": "Links to official fund documents",
+            "properties": {
+                "sid_link": {
+                    "type": [
+                        "string",
+                        "null"
+                    ],
+                    "format": "uri"
+                },
+                "kim_link": {
+                    "type": [
+                        "string",
+                        "null"
+                    ],
+                    "format": "uri"
+                },
+                "factsheet_link": {
+                    "type": [
+                        "string",
+                        "null"
+                    ],
+                    "format": "uri"
+                }
+            }
+        },
+        "scraped_at": {
+            "type": "string",
+            "description": "ISO 8601 timestamp of when the data was scraped",
+            "format": "date-time"
+        }
+    },
+    "additionalProperties": false
+}

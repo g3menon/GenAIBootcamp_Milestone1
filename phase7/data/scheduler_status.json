@@ -1,0 +1,23 @@
+{
+    "last_run": null,
+    "status": "never_run",
+    "phases": {
+        "phase1": {
+            "status": "pending",
+            "funds_scraped": 0,
+            "duration_sec": 0
+        },
+        "phase2": {
+            "status": "pending",
+            "chunks_created": 0,
+            "duration_sec": 0
+        },
+        "phase3": {
+            "status": "pending",
+            "vectors_stored": 0,
+            "duration_sec": 0
+        }
+    },
+    "next_run": null,
+    "data_changes": null
+}

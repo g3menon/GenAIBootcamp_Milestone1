@@ -1,0 +1,29 @@
+# Phase 1: Scraping
+playwright>=1.40.0
+
+# Phase 2: Processing
+jsonschema>=4.20.0
+
+# Phase 3: Vector Store
+chromadb>=0.4.22
+sentence-transformers>=2.3.0
+
+# Phase 4: RAG
+google-generativeai>=0.3.0
+# openai>=1.6.0  # Alternative LLM
+
+# Phase 5: Backend API
+fastapi>=0.109.0
+uvicorn>=0.25.0
+httpx>=0.26.0              # For testing async endpoints
+google-auth>=2.25.0        # Google ID token verification
+slowapi>=0.1.9             # Rate limiting for FastAPI
+
+# Phase 7: Scheduler
+apscheduler>=3.10.4
+
+# Common
+python-dotenv>=1.0.0
+pydantic>=2.5.0
+pytest>=7.4.0
+loguru>=0.7.0

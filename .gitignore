@@ -1,0 +1,41 @@
+# ─── Secrets ────────────────────────────────────────────────
+.env
+
+# ─── Python ─────────────────────────────────────────────────
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+dist/
+build/
+.eggs/
+*.egg
+
+# ─── Virtual environments ──────────────────────────────────
+.venv/
+.venv311/
+venv/
+env/
+
+# ─── ChromaDB persistent data ─────────────────────────────
+phase3/data/chroma_db/
+
+# ─── Scraper logs ──────────────────────────────────────────
+phase1/logs/
+*.log
+
+# ─── Model cache (sentence-transformers) ──────────────────
+.cache/
+
+# ─── IDE ────────────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# ─── OS ─────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+
+# ─── pytest ─────────────────────────────────────────────────
+.pytest_cache/

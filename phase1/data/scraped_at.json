@@ -1,0 +1,14 @@
+{
+  "last_scraped": "2026-03-05T05:42:45.946654+00:00",
+  "funds_scraped": [
+    "hdfc_banking_financial_services",
+    "hdfc_pharma_healthcare",
+    "hdfc_housing_opportunities",
+    "hdfc_manufacturing",
+    "hdfc_transportation_logistics"
+  ],
+  "funds_failed": [],
+  "total_funds": 5,
+  "success_count": 5,
+  "error_count": 0
+}

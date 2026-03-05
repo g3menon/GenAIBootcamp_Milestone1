@@ -1,0 +1,118 @@
+{
+  "fund_id": "hdfc_pharma_healthcare",
+  "fund_name": "HDFC Pharma and Healthcare Fund",
+  "source_url": "https://www.indmoney.com/mutual-funds/hdfc-pharma-and-healthcare-fund-direct-growth-1044289",
+  "plan_type": "Direct Plan - Growth",
+  "category": "Equity - Sectoral",
+  "overview": {
+    "nav": "₹17.83",
+    "nav_date": "04 Mar 2026",
+    "benchmark": null
+  },
+  "returns": {
+    "1M": "3.48%",
+    "3M": "0.29%",
+    "6M": "1.04%",
+    "1Y": "19.38%",
+    "3Y": "--",
+    "5Y": "--",
+    "since_inception": null,
+    "benchmark_returns": {
+      "1M": "1.56%",
+      "3M": "2.42%",
+      "6M": "1.52%",
+      "1Y": "16.31%",
+      "3Y": "16.18%",
+      "5Y": "12.79%"
+    }
+  },
+  "costs": {
+    "expense_ratio": "0.95%",
+    "exit_load": "1% if redeemed in 0-30 Days",
+    "stamp_duty": null,
+    "transaction_charges": null
+  },
+  "risk": {
+    "riskometer": "Very High",
+    "risk_category": null,
+    "lock_in_period": "None",
+    "suitable_for": null
+  },
+  "investment": {
+    "minimum_sip": "₹100",
+    "minimum_lumpsum": "₹100",
+    "sip_frequency": null,
+    "additional_purchase_min": null
+  },
+  "portfolio": {
+    "top_holdings": [
+      {
+        "name": "Sun Pharmaceuticals Industries Ltd",
+        "pct": "9.75%"
+      },
+      {
+        "name": "Divi's Laboratories Ltd",
+        "pct": "8.57%"
+      },
+      {
+        "name": "Glenmark Pharmaceuticals Ltd",
+        "pct": "6.76%"
+      }
+    ],
+    "sector_allocation": null,
+    "total_holdings": null,
+    "portfolio_turnover": null
+  },
+  "aum": {
+    "value": "₹1876 Cr",
+    "date": null,
+    "trend": null
+  },
+  "manager": {
+    "name": "Nikhil Mathur",
+    "experience": null,
+    "qualification": null,
+    "other_funds_managed": null
+  },
+  "inception_date": "N/A",
+  "faqs": [
+    {
+      "question": "How do I invest in HDFC Pharma and Healthcare Fund?",
+      "answer": "INDmoney makes it simple to invest in the HDFC Pharma and Healthcare Fund. To do so, follow the steps below:Download the INDmoney app.Search for ‘HDFC Pharma and Healthcare Fund’.Select whether you want to invest in SIP or lump sum.Enter the amount you wish to invest.Set up payments via bank mandate or UPI."
+    },
+    {
+      "question": "What is the current NAV of HDFC Pharma and Healthcare Fund?",
+      "answer": "The NAV of the fund today is ₹17.84. NAV or Net Asset Value is the per unit price of a mutual fund. For example, if the NAV of a fund is ₹10, it means you can get 1000 units of that mutual fund at ₹10,000."
+    },
+    {
+      "question": "What is the return on the fund?",
+      "answer": "HDFC Pharma and Healthcare Fund fund has generated a return of 19.38% in 1 year"
+    },
+    {
+      "question": "Who is the fund manager of HDFC Pharma and Healthcare Fund?",
+      "answer": "The fund managers are Nikhil Mathur, Dhruv Muchhal."
+    },
+    {
+      "question": "What is the exit load of the fund?",
+      "answer": "The exit load is 1% if redeemed in 0-30 Days. Exit load is a fee levied for ‘exiting’ the fund earlier than a stipulated period, usually 1 year."
+    },
+    {
+      "question": "What is the expense ratio of the fund?",
+      "answer": "The expense ratio is 0.95%. The Expense Ratio is a fee charged for managing the fund. This includes commissions, administrative costs etc."
+    },
+    {
+      "question": "What is the AUM of the fund?",
+      "answer": "The AUM of the fund is ₹1876 Cr. AUM stands for Assets Under Management. It refers to the total assets managed by the fund."
+    },
+    {
+      "question": "What are the top holdings of HDFC Pharma and Healthcare Fund?",
+      "answer": "The top 3 holdings of the fund are Sun Pharmaceuticals Industries Ltd(9.75%), Divi's Laboratories Ltd(8.57%), Glenmark Pharmaceuticals Ltd(6.76%)"
+    }
+  ],
+  "documents": {
+    "sid_link": null,
+    "kim_link": null,
+    "factsheet_link": null
+  },
+  "scraped_at": "2026-03-05T05:41:50.535874+00:00"
+}

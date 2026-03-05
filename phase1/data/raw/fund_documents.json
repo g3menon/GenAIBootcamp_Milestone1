@@ -1,0 +1,116 @@
+{
+    "description": "Source URLs and official HDFC AMC fund documents (SID, KIM, Factsheet) for each target fund. The source_url is the IndMoney page from which data is scraped — this URL must be included in every chunk as the citation source.",
+    "last_updated": null,
+    "funds": {
+        "hdfc_banking_financial_services": {
+            "fund_name": "HDFC Banking & Financial Services Fund",
+            "source_url": "https://www.indmoney.com/mutual-funds/hdfc-banking-financial-services-fund-direct-growth-1006661",
+            "hdfc_amc_url": "https://www.hdfcfund.com/mutual-fund/equity-mutual-fund/hdfc-banking-and-financial-services-fund",
+            "documents": {
+                "sid": {
+                    "label": "Scheme Information Document (SID)",
+                    "url": null,
+                    "description": "Complete scheme details including investment objective, risk factors, fees, and legal information."
+                },
+                "kim": {
+                    "label": "Key Information Memorandum (KIM)",
+                    "url": null,
+                    "description": "Summarized key information for investors including minimum investment, load structure, and benchmark."
+                },
+                "factsheet": {
+                    "label": "Monthly Factsheet",
+                    "url": null,
+                    "description": "Monthly performance summary, portfolio composition, and fund manager commentary."
+                }
+            }
+        },
+        "hdfc_pharma_healthcare": {
+            "fund_name": "HDFC Pharma and Healthcare Fund",
+            "source_url": "https://www.indmoney.com/mutual-funds/hdfc-pharma-and-healthcare-fund-direct-growth-1044289",
+            "hdfc_amc_url": "https://www.hdfcfund.com/mutual-fund/equity-mutual-fund/hdfc-pharma-and-healthcare-fund",
+            "documents": {
+                "sid": {
+                    "label": "Scheme Information Document (SID)",
+                    "url": null,
+                    "description": "Complete scheme details including investment objective, risk factors, fees, and legal information."
+                },
+                "kim": {
+                    "label": "Key Information Memorandum (KIM)",
+                    "url": null,
+                    "description": "Summarized key information for investors including minimum investment, load structure, and benchmark."
+                },
+                "factsheet": {
+                    "label": "Monthly Factsheet",
+                    "url": null,
+                    "description": "Monthly performance summary, portfolio composition, and fund manager commentary."
+                }
+            }
+        },
+        "hdfc_housing_opportunities": {
+            "fund_name": "HDFC Housing Opportunities Fund",
+            "source_url": "https://www.indmoney.com/mutual-funds/hdfc-housing-opportunities-fund-direct-growth-9006",
+            "hdfc_amc_url": "https://www.hdfcfund.com/mutual-fund/equity-mutual-fund/hdfc-housing-opportunities-fund",
+            "documents": {
+                "sid": {
+                    "label": "Scheme Information Document (SID)",
+                    "url": null,
+                    "description": "Complete scheme details including investment objective, risk factors, fees, and legal information."
+                },
+                "kim": {
+                    "label": "Key Information Memorandum (KIM)",
+                    "url": null,
+                    "description": "Summarized key information for investors including minimum investment, load structure, and benchmark."
+                },
+                "factsheet": {
+                    "label": "Monthly Factsheet",
+                    "url": null,
+                    "description": "Monthly performance summary, portfolio composition, and fund manager commentary."
+                }
+            }
+        },
+        "hdfc_manufacturing": {
+            "fund_name": "HDFC Manufacturing Fund",
+            "source_url": "https://www.indmoney.com/mutual-funds/hdfc-manufacturing-fund-direct-growth-1045641",
+            "hdfc_amc_url": "https://www.hdfcfund.com/mutual-fund/equity-mutual-fund/hdfc-manufacturing-fund",
+            "documents": {
+                "sid": {
+                    "label": "Scheme Information Document (SID)",
+                    "url": null,
+                    "description": "Complete scheme details including investment objective, risk factors, fees, and legal information."
+                },
+                "kim": {
+                    "label": "Key Information Memorandum (KIM)",
+                    "url": null,
+                    "description": "Summarized key information for investors including minimum investment, load structure, and benchmark."
+                },
+                "factsheet": {
+                    "label": "Monthly Factsheet",
+                    "url": null,
+                    "description": "Monthly performance summary, portfolio composition, and fund manager commentary."
+                }
+            }
+        },
+        "hdfc_transportation_logistics": {
+            "fund_name": "HDFC Transportation and Logistics Fund",
+            "source_url": "https://www.indmoney.com/mutual-funds/hdfc-transportation-and-logistics-fund-direct-growth-1044147",
+            "hdfc_amc_url": "https://www.hdfcfund.com/mutual-fund/equity-mutual-fund/hdfc-transportation-and-logistics-fund",
+            "documents": {
+                "sid": {
+                    "label": "Scheme Information Document (SID)",
+                    "url": null,
+                    "description": "Complete scheme details including investment objective, risk factors, fees, and legal information."
+                },
+                "kim": {
+                    "label": "Key Information Memorandum (KIM)",
+                    "url": null,
+                    "description": "Summarized key information for investors including minimum investment, load structure, and benchmark."
+                },
+                "factsheet": {
+                    "label": "Monthly Factsheet",
+                    "url": null,
+                    "description": "Monthly performance summary, portfolio composition, and fund manager commentary."
+                }
+            }
+        }
+    }
+}

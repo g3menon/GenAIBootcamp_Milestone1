@@ -1,0 +1,124 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "Processed Chunk Schema",
+    "description": "JSON Schema for validating processed chunks created by Phase 2. Each chunk in processed_chunks.json must conform to this schema. Every chunk carries a source_url so the chatbot can cite the exact data source in every response.",
+    "type": "object",
+    "required": [
+        "chunk_id",
+        "fund_id",
+        "fund_name",
+        "source_url",
+        "chunk_type",
+        "metadata_tags",
+        "content",
+        "last_updated"
+    ],
+    "properties": {
+        "chunk_id": {
+            "type": "string",
+            "description": "Unique chunk identifier: {fund_id}_{chunk_type}",
+            "pattern": "^(hdfc_[a-z_]+|static)_(overview|nav|returns|costs|risk|investment|portfolio|aum|manager|documents|faq_[a-z0-9_]+)$"
+        },
+        "fund_id": {
+            "type": "string",
+            "description": "Fund identifier matching the source fund",
+            "pattern": "^(hdfc_[a-z_]+|static)$"
+        },
+        "fund_name": {
+            "type": "string",
+            "description": "Human-readable fund name for citations",
+            "minLength": 5
+        },
+        "source_url": {
+            "type": "string",
+            "description": "The URL from which this chunk's data was sourced. For scraped data, this is the IndMoney fund page URL. For static FAQs, this is 'manually_curated'. This URL is returned in every chatbot response for citation.",
+            "minLength": 5
+        },
+        "chunk_type": {
+            "type": "string",
+            "description": "Type of chunk determining its content scope",
+            "enum": [
+                "overview",
+                "nav",
+                "returns",
+                "costs",
+                "risk",
+                "investment",
+                "portfolio",
+                "aum",
+                "manager",
+                "documents",
+                "faq"
+            ]
+        },
+        "metadata_tags": {
+            "type": "array",
+            "description": "Searchable metadata tags for this chunk (used for filtered retrieval)",
+            "items": {
+                "type": "string"
+            },
+            "minItems": 1,
+            "examples": [
+                [
+                    "fund_name",
+                    "category",
+                    "benchmark"
+                ],
+                [
+                    "expense_ratio",
+                    "exit_load"
+                ],
+                [
+                    "nav",
+                    "nav_date"
+                ],
+                [
+                    "1M",
+                    "3M",
+                    "1Y",
+                    "3Y",
+                    "5Y",
+                    "inception"
+                ],
+                [
+                    "riskometer_level",
+                    "lock_in"
+                ],
+                [
+                    "min_sip",
+                    "min_lumpsum"
+                ],
+                [
+                    "holdings",
+                    "sectors"
+                ],
+                [
+                    "aum_value",
+                    "aum_date"
+                ],
+                [
+                    "manager_name"
+                ],
+                [
+                    "sid_link",
+                    "kim_link"
+                ],
+                [
+                    "question",
+                    "source"
+                ]
+            ]
+        },
+        "content": {
+            "type": "string",
+            "description": "Natural language content of the chunk, optimized for embedding and LLM consumption. Must be self-contained and cite the fund name.",
+            "minLength": 20
+        },
+        "last_updated": {
+            "type": "string",
+            "description": "ISO 8601 timestamp of when the source data was scraped",
+            "format": "date-time"
+        }
+    },
+    "additionalProperties": false
+}

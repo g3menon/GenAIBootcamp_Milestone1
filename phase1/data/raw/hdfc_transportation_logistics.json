@@ -1,0 +1,118 @@
+{
+  "fund_id": "hdfc_transportation_logistics",
+  "fund_name": "HDFC Transportation and Logistics Fund",
+  "source_url": "https://www.indmoney.com/mutual-funds/hdfc-transportation-and-logistics-fund-direct-growth-1044147",
+  "plan_type": "Direct Plan - Growth",
+  "category": "Equity - Sectoral",
+  "overview": {
+    "nav": "₹17.64",
+    "nav_date": "04 Mar 2026",
+    "benchmark": "Nifty Transportation & Logistics TR INR"
+  },
+  "returns": {
+    "1M": "5.09%",
+    "3M": "5.43%",
+    "6M": "3.23%",
+    "1Y": "31.31%",
+    "3Y": "--",
+    "5Y": "--",
+    "since_inception": null,
+    "benchmark_returns": {
+      "1M": "1.56%",
+      "3M": "2.42%",
+      "6M": "1.52%",
+      "1Y": "16.31%",
+      "3Y": "16.18%",
+      "5Y": "12.79%"
+    }
+  },
+  "costs": {
+    "expense_ratio": "0.97%",
+    "exit_load": "1% if redeemed in 0-30 Days",
+    "stamp_duty": null,
+    "transaction_charges": null
+  },
+  "risk": {
+    "riskometer": "Very High",
+    "risk_category": null,
+    "lock_in_period": "None",
+    "suitable_for": null
+  },
+  "investment": {
+    "minimum_sip": "₹100",
+    "minimum_lumpsum": "₹100",
+    "sip_frequency": null,
+    "additional_purchase_min": null
+  },
+  "portfolio": {
+    "top_holdings": [
+      {
+        "name": "Maruti Suzuki India Ltd",
+        "pct": "10.09%"
+      },
+      {
+        "name": "Eicher Motors Ltd",
+        "pct": "9.64%"
+      },
+      {
+        "name": "Bosch Ltd",
+        "pct": "6.9%"
+      }
+    ],
+    "sector_allocation": null,
+    "total_holdings": null,
+    "portfolio_turnover": null
+  },
+  "aum": {
+    "value": "₹1693 Cr",
+    "date": null,
+    "trend": null
+  },
+  "manager": {
+    "name": "Dhruv Muchhal",
+    "experience": null,
+    "qualification": null,
+    "other_funds_managed": null
+  },
+  "inception_date": "N/A",
+  "faqs": [
+    {
+      "question": "How do I invest in HDFC Transportation and Logistics Fund?",
+      "answer": "INDmoney makes it simple to invest in the HDFC Transportation and Logistics Fund. To do so, follow the steps below:Download the INDmoney app.Search for ‘HDFC Transportation and Logistics Fund’.Select whether you want to invest in SIP or lump sum.Enter the amount you wish to invest.Set up payments via bank mandate or UPI."
+    },
+    {
+      "question": "What is the current NAV of HDFC Transportation and Logistics Fund?",
+      "answer": "The NAV of the fund today is ₹17.64. NAV or Net Asset Value is the per unit price of a mutual fund. For example, if the NAV of a fund is ₹10, it means you can get 1000 units of that mutual fund at ₹10,000."
+    },
+    {
+      "question": "What is the return on the fund?",
+      "answer": "HDFC Transportation and Logistics Fund fund has generated a return of 31.31% in 1 year"
+    },
+    {
+      "question": "Who is the fund manager of HDFC Transportation and Logistics Fund?",
+      "answer": "The fund managers are Dhruv Muchhal, Priya Ranjan."
+    },
+    {
+      "question": "What is the exit load of the fund?",
+      "answer": "The exit load is 1% if redeemed in 0-30 Days. Exit load is a fee levied for ‘exiting’ the fund earlier than a stipulated period, usually 1 year."
+    },
+    {
+      "question": "What is the expense ratio of the fund?",
+      "answer": "The expense ratio is 0.97%. The Expense Ratio is a fee charged for managing the fund. This includes commissions, administrative costs etc."
+    },
+    {
+      "question": "What is the AUM of the fund?",
+      "answer": "The AUM of the fund is ₹1693 Cr. AUM stands for Assets Under Management. It refers to the total assets managed by the fund."
+    },
+    {
+      "question": "What are the top holdings of HDFC Transportation and Logistics Fund?",
+      "answer": "The top 3 holdings of the fund are Maruti Suzuki India Ltd(10.09%), Eicher Motors Ltd(9.64%), Bosch Ltd(6.9%)"
+    }
+  ],
+  "documents": {
+    "sid_link": null,
+    "kim_link": null,
+    "factsheet_link": null
+  },
+  "scraped_at": "2026-03-05T05:42:45.931530+00:00"
+}
