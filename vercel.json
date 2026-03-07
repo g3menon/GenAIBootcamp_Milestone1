@@ -12,6 +12,14 @@
             "dest": "phase5/backend/main.py"
         },
         {
+            "src": "/ui/(.*)",
+            "dest": "phase5/backend/main.py"
+        },
+        {
+            "src": "/",
+            "dest": "phase5/backend/main.py"
+        },
+        {
             "src": "/(.*)",
             "dest": "phase5/backend/main.py"
         }
