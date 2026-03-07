@@ -4,6 +4,10 @@
         {
             "src": "phase5/backend/main.py",
             "use": "@vercel/python"
+        },
+        {
+            "src": "phase5/frontend/**/*",
+            "use": "@vercel/static"
         }
     ],
     "routes": [
@@ -12,16 +16,28 @@
             "dest": "phase5/backend/main.py"
         },
         {
-            "src": "/ui/(.*)",
+            "src": "/api",
             "dest": "phase5/backend/main.py"
         },
         {
             "src": "/",
-            "dest": "phase5/backend/main.py"
+            "dest": "/phase5/frontend/index.html"
         },
         {
-            "src": "/(.*)",
-            "dest": "phase5/backend/main.py"
+            "src": "/index.html",
+            "dest": "/phase5/frontend/index.html"
+        },
+        {
+            "src": "/css/(.*)",
+            "dest": "/phase5/frontend/css/$1"
+        },
+        {
+            "src": "/js/(.*)",
+            "dest": "/phase5/frontend/js/$1"
+        },
+        {
+            "src": "/phase5/frontend/(.*)",
+            "dest": "/phase5/frontend/$1"
         }
     ]
 }
