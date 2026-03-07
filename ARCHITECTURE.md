@@ -47,49 +47,63 @@ A **Retrieval-Augmented Generation (RAG) chatbot** that answers user queries abo
 
 ---
 
+### 🏗️ Technology Stack (Actual Implementation)
+
+| Component | Technology | Description |
+| :--- | :--- | :--- |
+| **Frontend** | HTML5, Vanilla CSS, JS | Modern UI with **Google Material Icons** and Inter typography. |
+| **Backend** | FastAPI | High-performance Python API serving chat and metadata. |
+| **LLM** | Google Gemini 2.5 Flash | Core reasoning engine for response generation. |
+| **Embedding** | models/gemini-embedding-001 | 3072-dimension vectors for semantic search. |
+| **Vector Database** | **Pinecone Serverless** | Cloud-native vector indexing with metadata filtering. |
+| **Deployment** | Vercel | Serverless hosting for API and static frontend. |
+| **Scheduler** | Vercel Cron + GitHub Actions | 10:00 AM daily automated data refresh pipeline. |
+
+---
+
 ## High-Level Architecture Diagram
 
 ```
 ┌─────────────────────────────────────────────────────────────────────────────┐
-│                     FRONTEND — Chat UI (Phase 5b)                          │
-│          Modern HTML / CSS / JS  •  Responsive                             │
+│                     FRONTEND — Chat UI (Phase 5)                           │
+│          Material Icons  •  Responsive CSS  •  Inter Font                  │
 └──────────────────────────┬──────────────────────────────────────────────────┘
-                           │  REST / WebSocket (HTTP)
+                           │  REST API (JSON)
                            ▼
 ┌─────────────────────────────────────────────────────────────────────────────┐
-│                     BACKEND — API Server (Phase 5a)                        │
-│          FastAPI  •  /chat  /health  /funds  •  Session Mgmt               │
+│                     BACKEND — API Server (Phase 5)                        │
+│          FastAPI (Vercel)  •  /api/chat  /api/health  /api/funds           │
 └──────────┬──────────────────────────────────┬───────────────────────────────┘
            │                                  │
            ▼                                  ▼
 ┌─────────────────────────────┐  ┌────────────────────────────────────────────┐
 │   QUERY ENGINE (Phase 4)    │  │         LLM LAYER (Phase 4)                │
-│   Classification→Retrieval  │  │   Google Gemini Flash (2.5/3/3.5)          │
-│         (Phase 3 store)     │  │   Prompt Templates + Guardrails            │
+│   Intent Classification     │  │   Google Gemini 2.5 Flash                  │
+│   Context Extraction        │  │   Instruction Prompts + Guardrails         │
 └──────────┬──────────────────┘  └────────────────────────────────────────────┘
            │
            ▼
 ┌─────────────────────────────────────────────────────────────────────────────┐
 │                    VECTOR STORE (Phase 3)                                   │
-│            ChromaDB / Pinecone  •  Embedded Fund Data                       │
+│            **Pinecone Serverless**  •  Gemini Embeddings                    │
 └──────────┬──────────────────────────────────────────────────────────────────┘
            │
            ▼
 ┌─────────────────────────────────────────────────────────────────────────────┐
 │              DATA PROCESSING & CHUNKING (Phase 2)                           │
-│     Raw Data → Cleaning → Structuring → Chunking → Embedding                │
+│     JSON Schema → Semantic Chunking → Gemini Embedding                      │
 └──────────┬──────────────────────────────────────────────────────────────────┘
            │
            ▼
 ┌─────────────────────────────────────────────────────────────────────────────┐
 │                   DATA COLLECTION (Phase 1)                                 │
-│     Playwright Web Scraper → Raw JSON/CSV Storage                           │
+│     Playwright (Chromium) Scraper → Raw JSON Storage                        │
 └──────────┬──────────────────────────────────────────────────────────────────┘
            ▲
-           │  Periodic Trigger
+           │  Triggered by Vercel Cron (Phase 7)
 ┌──────────┴──────────────────────────────────────────────────────────────────┐
-│              DATA REFRESH SCHEDULER (Phase 7)                               │
-│     APScheduler  •  Cron  •  Phase 1→2→3 Cascade  •  Health Checks         │
+│              PIPELINE ORCHESTRATOR (Phase 7)                                │
+│     Daily Cron  •  Continuous Scraping → Vector Upsert                      │
 └─────────────────────────────────────────────────────────────────────────────┘
 ```
 
