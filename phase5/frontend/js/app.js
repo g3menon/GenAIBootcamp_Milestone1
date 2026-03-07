@@ -104,22 +104,27 @@ function appendMessage(sender, text, isThinking = false) {
 
             const copyBtn = document.createElement('button');
             copyBtn.className = 'action-btn copy-btn';
-            copyBtn.textContent = 'Copy';
+            copyBtn.innerHTML = '<span class="material-icons" style="font-size: 18px;">content_copy</span>';
+            copyBtn.title = 'Copy to clipboard';
             copyBtn.onclick = () => {
                 navigator.clipboard.writeText(text);
-                copyBtn.textContent = 'Copied!';
-                setTimeout(() => copyBtn.textContent = 'Copy', 2000);
+                copyBtn.innerHTML = '<span class="material-icons" style="font-size: 18px; color: #10b981;">done</span>';
+                setTimeout(() => {
+                    copyBtn.innerHTML = '<span class="material-icons" style="font-size: 18px;">content_copy</span>';
+                }, 2000);
             };
 
             const thumbUpBtn = document.createElement('button');
             thumbUpBtn.className = 'action-btn thumb-btn';
-            thumbUpBtn.textContent = '👍';
-            thumbUpBtn.onclick = () => { thumbUpBtn.style.color = 'green'; };
+            thumbUpBtn.innerHTML = '<span class="material-icons" style="font-size: 18px;">thumb_up</span>';
+            thumbUpBtn.title = 'Helpful';
+            thumbUpBtn.onclick = () => { thumbUpBtn.style.color = '#10b981'; };
 
             const thumbDownBtn = document.createElement('button');
             thumbDownBtn.className = 'action-btn thumb-btn';
-            thumbDownBtn.textContent = '👎';
-            thumbDownBtn.onclick = () => { thumbDownBtn.style.color = 'red'; };
+            thumbDownBtn.innerHTML = '<span class="material-icons" style="font-size: 18px;">thumb_down</span>';
+            thumbDownBtn.title = 'Not helpful';
+            thumbDownBtn.onclick = () => { thumbDownBtn.style.color = '#ef4444'; };
 
             actionsDiv.appendChild(copyBtn);
             actionsDiv.appendChild(thumbUpBtn);
