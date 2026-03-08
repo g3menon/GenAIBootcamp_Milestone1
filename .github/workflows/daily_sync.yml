@@ -23,7 +23,7 @@ jobs:
         run: |
           python -m pip install --upgrade pip
           pip install -r requirements.txt
-          playwright install chromium
+          playwright install chromium --with-deps
 
       - name: Run Orchestrated Pipeline
         env:
@@ -32,5 +32,7 @@ jobs:
           PINECONE_INDEX_NAME: hdfc-mutual-funds
           EMBEDDING_MODEL: models/gemini-embedding-001
         run: |
-          # We use the rebuild flag to ensure Pinecone stays in sync with latest scrape
+          # Run the full pipeline from scrape to vector store sync
+          python -m phase1.run_scraper
+          python -m phase2.run_processor
           python -m phase3.run_vectorstore --rebuild
