@@ -2,8 +2,8 @@ name: Daily Data Sync
 
 on:
   schedule:
-    # Every 5 minutes (for testing)
-    - cron: '*/5 * * * *'
+    # 10:00 AM IST is 04:30 AM UTC
+    - cron: '30 4 * * *'
   workflow_dispatch: # Allows manual triggering from GitHub UI
 
 env:
